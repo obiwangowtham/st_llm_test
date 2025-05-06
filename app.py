@@ -1,8 +1,8 @@
 import streamlit as st
 from openai import OpenAI
-f = open('keys.txt','r') 
-OPENAI_API_KEY = f.read().strip()
-client = OpenAI(api_key=OPENAI_API_KEY)
+#f = open('keys.txt','r') 
+#OPENAI_API_KEY = f.read().strip()
+client = OpenAI(api_key="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")
 
 st.title(" AI Chatbot")
 st.chat_message("assistant").write("Hi, How may I help you?")
